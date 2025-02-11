@@ -1,0 +1,76 @@
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #1a1a1a, #232323);
+    color: white;
+  }
+  
+  .container {
+    max-width: 800px;
+    padding: 2rem;
+  }
+
+  /* Ensure all animated elements start hidden */
+.heading,
+.subtitle,
+.buttons {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+  
+  .heading {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .highlight {
+    color: #ffcc00; /* Bright accent color */
+  }
+  
+  .subtitle {
+    font-size: 1.25rem;
+    color: #bbb;
+    margin-top: 1rem;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .primaryBtn, .secondaryBtn {
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .primaryBtn {
+    background-color: #ffcc00;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .primaryBtn:hover {
+    transform: scale(1.05);
+  }
+  
+  .secondaryBtn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+  }
+  
+  .secondaryBtn:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+  }
+  
